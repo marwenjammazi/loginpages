@@ -51,7 +51,7 @@ spam {
   padding: 0px;
   margin: 0px;
 }
-div {
+.content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -109,4 +109,28 @@ img {
 }
 .log button:active {
   transform: scale(0.98);
+}
+/*phone section*/
+@media (max-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: black;
+  }
+  .content {
+    background: rgb(161, 163, 168);
+  }
+}
+/*tablet section*/
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: black;
+  }
+  .content {
+    background: rgb(56, 56, 56);
+  }
 }
